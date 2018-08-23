@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: Arbaaz
+  description: Ansible role for sending alerts via telegram.
+  min_ansible_version: 1.0
+  license: MIT
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+
+  galaxy_tags:
+    - alerting
+    - system
+dependencies: []
