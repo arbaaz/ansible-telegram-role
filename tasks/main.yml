@@ -1,0 +1,10 @@
+---
+  - name : Copying telegram file
+    template:
+      src: ../templates/telegram.j2
+      dest: /usr/local/bin/telegram
+      mode: a+x
+      backup: yes
+
+  - name: Send test message
+    shell: "telegram {{TEXT}}"

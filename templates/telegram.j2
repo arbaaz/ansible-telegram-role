@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# usage ./telegram how you doing?
+# export TELEGRAM_BOT_TOKEN
+# export TELEGRAM_CHAT_ID
+
+TEXT="$@"
+curl -s https://api.telegram.org/bot{{TELEGRAM_BOT_TOKEN}}/sendMessage\?chat_id\={{TELEGRAM_CHAT_ID}}\&text\="$TEXT" > /dev/null
